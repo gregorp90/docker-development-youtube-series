@@ -1,0 +1,12 @@
+FROM python:3.10-slim AS base
+
+WORKDIR /usr/src/app/
+
+# COPY ./python/requirements.txt .
+# COPY ./python/app.py .
+COPY . .
+
+RUN pip install --upgrade pip
+RUN pip install -r ./requirements.txt
+
+CMD ["python", "app.py"]
