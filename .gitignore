@@ -14,3 +14,4 @@ messaging/kafka/data/*
 kubernetes/portainer/volume*
 kubernetes/rancher/volume/*
 kubernetes/portainer/business/volume*
+.idea/

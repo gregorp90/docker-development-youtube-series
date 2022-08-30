@@ -13,7 +13,8 @@ services:
     - ./logs:/output/ # Example: Fluentd will collect logs and store it here for demo
     logging:
       driver: "local"
-  # This app sends logs to Fluentd via HTTP
+#    ports:
+#      - "24224:24224"
   app:
     build:
       context: ./python/
